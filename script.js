@@ -10,4 +10,16 @@ function Book(title, author, pages, read) {
 
 function addBookToLibrary() {
   // do stuff here
+  let title = window.prompt("Book title?");
+  let author = window.prompt("Author?");
+  let pages = window.prompt("Number of pages?");
+  let read = window.prompt("Have you read this book?");
+  let book = new Book(title, 'a','b','c');
+  myLibrary.push(book);
+  console.log(myLibrary);
 }
+
+const button=document.querySelector("button");
+button.addEventListener('click', function(){
+    addBookToLibrary();
+});
